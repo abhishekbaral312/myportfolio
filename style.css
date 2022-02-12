@@ -55,13 +55,13 @@ hr {
 .cloud {
   width: 10%;
   right: 20%;
-  top: 10%;
+  top: 60px;
   position: absolute;
 }
 .cloud2 {
   width: 10%;
   left: 20%;
-  top: 40%;
+  top: 250px;
   position: absolute;
 
 }
