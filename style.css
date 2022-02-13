@@ -8,6 +8,7 @@ body{
   font-size: 1.5rem;
   overflow-x: hidden;
 }
+
 h1{
   font-size: 4rem;
   padding-top: 15%;
@@ -49,6 +50,116 @@ hr {
   margin-top: 50px;
 
 }
+/* ----------------------------------------------------------- */
+.navbar{
+  background-color: rgba(227,253,253,0.5) ;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+.logo {
+  width: 70px;
+  float: left;
+  padding: 20px 20px 20px 23%;
+}
+.navlinks {
+  width: 400px;
+  height: 70px;
+  text-align: center;
+  padding: 20px 10%;
+  float: right;
+  font-size: 1.3rem;
+}
+.navlinks a{
+  display: inline-block;
+  text-decoration: none;
+  opacity: 80%;
+  padding: 20px;
+  color: #009DAE;
+  font-weight: bold;
+}
+.navlinks a:hover{
+  opacity: 100%;
+  font-size: 1.5rem;
+  padding: 15px;
+}
+.navbtn{
+  visibility: hidden;
+  width: 0px;
+}
+.navmenu {
+  visibility: hidden;
+  position: absolute;
+}
+@media (max-width:900px) {
+  .logo{
+    padding-left: 5%;
+    float: none;
+  }
+  .navlinks{
+    padding: 20px 4%;
+  }
+  .navlinks a{
+    padding: 15px;
+  }
+}
+@media (max-width:600px) {
+  .navlinks{
+    visibility: hidden;
+    width: 0px;
+    padding: 0px;
+  }
+  .navicon{
+    visibility: visible;
+    width: auto;
+    font-size: 1.5rem;
+    padding: 5px;
+    color: white;
+  }
+  .navbtn{
+    float: right;
+    visibility: visible;
+    width: 50px;
+    margin: 30px;
+    border: none;
+    background-color: #009DAE;
+    opacity: 80%;
+    border-radius: 10px;
+  }
+  .navbtn:hover{
+    opacity: 100%;
+  }
+  .logo{
+    width: 60px;
+    float: left;
+  }
+  /* --------------------------------------------- */
+  .navmenu{
+    display: none;
+    visibility: visible;
+    width: 200px;
+    z-index: 5;
+    position: fixed;
+    margin-top: 100px;
+    background-color: #009DAE;
+    margin-left: 49%;
+    border-radius: 10px;
+  }
+  .navmenu ul{
+    list-style-type: none;
+    padding: 0px;
+  }
+  .navmenu a{
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+  }
+  /* --------------------------------------------------- */
+}
+
+/* --------------------------------------------------------------------------- */
 #home {
   background-color: #E3FDFD;
   text-align: center;
@@ -56,13 +167,13 @@ hr {
 .cloud {
   width: 10%;
   right: 20%;
-  top: 60px;
+  top: 10%;
   position: absolute;
 }
 .cloud2 {
   width: 10%;
   left: 20%;
-  top: 250px;
+  top: 40%;
   position: absolute;
 
 }
@@ -142,7 +253,9 @@ hr {
   text-decoration: none;
 }
 @media (max-width:600px) {
-
+body {
+  margin: 0;
+}
 .mountain{
   width: 100%;
 }
